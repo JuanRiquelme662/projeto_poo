@@ -35,5 +35,14 @@ public enum TipoSinistro {
     public String getNome(){
         return nome;
     }
+
+    public static TipoSinistro getTipoSinistro(int codigo){
+        for(TipoSinistro tipo : TipoSinistro.values()){
+            if(tipo.getCodigo() == codigo){
+                return tipo;
+            }
+        }
+        return null;
+    }
     
 }
