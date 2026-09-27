@@ -4,10 +4,11 @@ import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import lombok.Getter;
 import lombok.Setter;
+import java.io.Serializable;
 
 @Getter 
 @Setter 
-public class Sinistro {
+public class Sinistro implements Serializable {
     private String numero;
     private Veiculo veiculo;
     private LocalDateTime dataHoraSinistro;

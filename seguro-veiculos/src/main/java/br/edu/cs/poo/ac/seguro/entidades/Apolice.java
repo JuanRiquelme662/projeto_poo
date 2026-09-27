@@ -3,10 +3,11 @@ package br.edu.cs.poo.ac.seguro.entidades;
 import java.math.BigDecimal;
 import lombok.Getter;
 import lombok.Setter;
+import java.io.Serializable;
 
 @Getter 
 @Setter 
-public class Apolice {
+public class Apolice implements Serializable {
     private String numero;
     private Veiculo veiculo;
     private BigDecimal valorFranquia;
