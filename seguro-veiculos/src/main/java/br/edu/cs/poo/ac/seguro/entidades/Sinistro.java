@@ -4,11 +4,9 @@ import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import lombok.Getter;
 import lombok.Setter;
-import lombok.AllArgsConstructor;
 
 @Getter 
 @Setter 
-@AllArgsConstructor
 public class Sinistro {
     private String numero;
     private Veiculo veiculo;
@@ -17,5 +15,15 @@ public class Sinistro {
     private String usuarioRegistro;
     private BigDecimal valorSinistro;
     private TipoSinistro tipo;
+
+    //numero nao aparece no Sinistro pois vai ir para os DAOs
     
+    public Sinistro(Veiculo veiculo, LocalDateTime dataHoraSinistro, LocalDateTime dataHoraRegistro, String usuarioRegistro, BigDecimal valorSinistro, TipoSinistro tipo) {
+        this.veiculo = veiculo;
+        this.dataHoraSinistro = dataHoraSinistro;
+        this.dataHoraRegistro = dataHoraRegistro;
+        this.usuarioRegistro = usuarioRegistro;
+        this.valorSinistro = valorSinistro;
+        this.tipo = tipo;
+    }
 }
