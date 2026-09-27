@@ -2,6 +2,7 @@ package br.edu.cs.poo.ac.seguro.entidades;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
+import java.time.Period;
 
 public class Segurado {
     private String nome;
@@ -17,7 +18,10 @@ public class Segurado {
     }
 
     public int getIdade(){
-        return LocalDate.now().getYear() - dataCriacao.getYear();
+        //mudar logica da idade para considerar o mes e o dia
+        Period periodo = Period.between(dataCriacao, LocalDate.now());
+        int idade = periodo.getYears();
+        return idade;
     }
 
     public void creditarBonus(BigDecimal valor){
