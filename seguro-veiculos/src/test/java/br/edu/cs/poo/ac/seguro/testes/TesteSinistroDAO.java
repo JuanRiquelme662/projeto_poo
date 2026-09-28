@@ -15,7 +15,7 @@ public class TesteSinistroDAO extends TesteDAO {
     protected Class getClasse() {
         return Sinistro.class;
     }
-
+    //lembrar de criar um veicuolo
     @Test
     public void teste01() {
         String numero = "00000000";
