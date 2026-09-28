@@ -19,7 +19,8 @@ public class Sinistro implements Serializable {
 
     //numero nao aparece no Sinistro pois vai ir para os DAOs
     
-    public Sinistro(Veiculo veiculo, LocalDateTime dataHoraSinistro, LocalDateTime dataHoraRegistro, String usuarioRegistro, BigDecimal valorSinistro, TipoSinistro tipo) {
+    public Sinistro(Veiculo veiculo, LocalDateTime dataHoraSinistro,
+         LocalDateTime dataHoraRegistro, String usuarioRegistro, BigDecimal valorSinistro, TipoSinistro tipo) {
         this.veiculo = veiculo;
         this.dataHoraSinistro = dataHoraSinistro;
         this.dataHoraRegistro = dataHoraRegistro;
