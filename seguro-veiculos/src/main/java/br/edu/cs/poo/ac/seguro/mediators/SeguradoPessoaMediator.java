@@ -11,7 +11,8 @@ public class SeguradoPessoaMediator {
 		return null;
 	}
 	public String incluirSeguradoPessoa(SeguradoPessoa seg) {
-		return msg;
+		//trocar para msg
+		return null;
 	}
 	public String alterarSeguradoPessoa(SeguradoPessoa seg) {
 		return null;
