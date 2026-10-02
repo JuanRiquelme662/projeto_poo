@@ -1,18 +1,23 @@
-C:\Users\Mito\Desktop\repositorios\Pong-Champs\projeto_poo\seguro-veiculos\src\main\java\br\edu\cs\poo\ac\seguro\entidades\PrecoAno.java
-C:\Users\Mito\Desktop\repositorios\Pong-Champs\projeto_poo\seguro-veiculos\src\main\java\br\edu\cs\poo\ac\seguro\daos\DAOGenerico.java
-C:\Users\Mito\Desktop\repositorios\Pong-Champs\projeto_poo\seguro-veiculos\src\main\java\br\edu\cs\poo\ac\seguro\daos\VeiculoDAO.java
-C:\Users\Mito\Desktop\repositorios\Pong-Champs\projeto_poo\seguro-veiculos\src\main\java\br\edu\cs\poo\ac\seguro\entidades\Veiculo.java
-C:\Users\Mito\Desktop\repositorios\Pong-Champs\projeto_poo\seguro-veiculos\src\main\java\br\edu\cs\poo\ac\seguro\entidades\TipoSinistro.java
-C:\Users\Mito\Desktop\repositorios\Pong-Champs\projeto_poo\seguro-veiculos\src\main\java\br\edu\cs\poo\ac\seguro\daos\SinistroDAO.java
-C:\Users\Mito\Desktop\repositorios\Pong-Champs\projeto_poo\seguro-veiculos\src\main\java\br\edu\cs\poo\ac\seguro\daos\SeguradoPessoaDAO.java
-C:\Users\Mito\Desktop\repositorios\Pong-Champs\projeto_poo\seguro-veiculos\src\main\java\br\edu\cs\poo\ac\seguro\entidades\Apolice.java
-C:\Users\Mito\Desktop\repositorios\Pong-Champs\projeto_poo\seguro-veiculos\src\main\java\br\edu\cs\poo\ac\seguro\entidades\Endereco.java
-C:\Users\Mito\Desktop\repositorios\Pong-Champs\projeto_poo\seguro-veiculos\src\main\java\br\edu\cs\poo\ac\seguro\entidades\Segurado.java
-C:\Users\Mito\Desktop\repositorios\Pong-Champs\projeto_poo\seguro-veiculos\src\main\java\br\edu\cs\poo\ac\seguro\entidades\PrecosAnosCategoria.java
-C:\Users\Mito\Desktop\repositorios\Pong-Champs\projeto_poo\seguro-veiculos\src\main\java\br\edu\cs\poo\ac\seguro\daos\ApoliceDAO.java
-C:\Users\Mito\Desktop\repositorios\Pong-Champs\projeto_poo\seguro-veiculos\src\main\java\br\edu\cs\poo\ac\seguro\App.java
-C:\Users\Mito\Desktop\repositorios\Pong-Champs\projeto_poo\seguro-veiculos\src\main\java\br\edu\cs\poo\ac\seguro\daos\SeguradoEmpresaDAO.java
-C:\Users\Mito\Desktop\repositorios\Pong-Champs\projeto_poo\seguro-veiculos\src\main\java\br\edu\cs\poo\ac\seguro\entidades\Sinistro.java
-C:\Users\Mito\Desktop\repositorios\Pong-Champs\projeto_poo\seguro-veiculos\src\main\java\br\edu\cs\poo\ac\seguro\entidades\SeguradoPessoa.java
-C:\Users\Mito\Desktop\repositorios\Pong-Champs\projeto_poo\seguro-veiculos\src\main\java\br\edu\cs\poo\ac\seguro\entidades\CategoriaVeiculo.java
-C:\Users\Mito\Desktop\repositorios\Pong-Champs\projeto_poo\seguro-veiculos\src\main\java\br\edu\cs\poo\ac\seguro\entidades\SeguradoEmpresa.java
+C:\Users\arthu\OneDrive\햞ea de Trabalho\CESAR\POO-2026-2\projeto_poo\seguro-veiculos\src\main\java\br\edu\cs\poo\ac\seguro\daos\SeguradoPessoaDAO.java
+C:\Users\arthu\OneDrive\햞ea de Trabalho\CESAR\POO-2026-2\projeto_poo\seguro-veiculos\src\main\java\br\edu\cs\poo\ac\seguro\entidades\PrecosAnosCategoria.java
+C:\Users\arthu\OneDrive\햞ea de Trabalho\CESAR\POO-2026-2\projeto_poo\seguro-veiculos\src\main\java\br\edu\cs\poo\ac\seguro\mediators\SeguradoEmpresaMediator.java
+C:\Users\arthu\OneDrive\햞ea de Trabalho\CESAR\POO-2026-2\projeto_poo\seguro-veiculos\src\main\java\br\edu\cs\poo\ac\seguro\entidades\Segurado.java
+C:\Users\arthu\OneDrive\햞ea de Trabalho\CESAR\POO-2026-2\projeto_poo\seguro-veiculos\src\main\java\br\edu\cs\poo\ac\seguro\entidades\TipoSinistro.java
+C:\Users\arthu\OneDrive\햞ea de Trabalho\CESAR\POO-2026-2\projeto_poo\seguro-veiculos\src\main\java\br\edu\cs\poo\ac\seguro\entidades\Veiculo.java
+C:\Users\arthu\OneDrive\햞ea de Trabalho\CESAR\POO-2026-2\projeto_poo\seguro-veiculos\src\main\java\br\edu\cs\poo\ac\seguro\entidades\CategoriaVeiculo.java
+C:\Users\arthu\OneDrive\햞ea de Trabalho\CESAR\POO-2026-2\projeto_poo\seguro-veiculos\src\main\java\br\edu\cs\poo\ac\seguro\entidades\SeguradoEmpresa.java
+C:\Users\arthu\OneDrive\햞ea de Trabalho\CESAR\POO-2026-2\projeto_poo\seguro-veiculos\src\main\java\br\edu\cs\poo\ac\seguro\mediators\SeguradoPessoaMediator.java
+C:\Users\arthu\OneDrive\햞ea de Trabalho\CESAR\POO-2026-2\projeto_poo\seguro-veiculos\src\main\java\br\edu\cs\poo\ac\seguro\mediators\SeguradoMediator.java
+C:\Users\arthu\OneDrive\햞ea de Trabalho\CESAR\POO-2026-2\projeto_poo\seguro-veiculos\src\main\java\br\edu\cs\poo\ac\seguro\entidades\Endereco.java
+C:\Users\arthu\OneDrive\햞ea de Trabalho\CESAR\POO-2026-2\projeto_poo\seguro-veiculos\src\main\java\br\edu\cs\poo\ac\seguro\daos\SinistroDAO.java
+C:\Users\arthu\OneDrive\햞ea de Trabalho\CESAR\POO-2026-2\projeto_poo\seguro-veiculos\src\main\java\br\edu\cs\poo\ac\seguro\daos\VeiculoDAO.java
+C:\Users\arthu\OneDrive\햞ea de Trabalho\CESAR\POO-2026-2\projeto_poo\seguro-veiculos\src\main\java\br\edu\cs\poo\ac\seguro\daos\DAOGenerico.java
+C:\Users\arthu\OneDrive\햞ea de Trabalho\CESAR\POO-2026-2\projeto_poo\seguro-veiculos\src\main\java\br\edu\cs\poo\ac\seguro\App.java
+C:\Users\arthu\OneDrive\햞ea de Trabalho\CESAR\POO-2026-2\projeto_poo\seguro-veiculos\src\main\java\br\edu\cs\poo\ac\seguro\entidades\PrecoAno.java
+C:\Users\arthu\OneDrive\햞ea de Trabalho\CESAR\POO-2026-2\projeto_poo\seguro-veiculos\src\main\java\br\edu\cs\poo\ac\seguro\mediators\StringUtils.java
+C:\Users\arthu\OneDrive\햞ea de Trabalho\CESAR\POO-2026-2\projeto_poo\seguro-veiculos\src\main\java\br\edu\cs\poo\ac\seguro\daos\SeguradoEmpresaDAO.java
+C:\Users\arthu\OneDrive\햞ea de Trabalho\CESAR\POO-2026-2\projeto_poo\seguro-veiculos\src\main\java\br\edu\cs\poo\ac\seguro\mediators\ValidadorCpfCnpj.java
+C:\Users\arthu\OneDrive\햞ea de Trabalho\CESAR\POO-2026-2\projeto_poo\seguro-veiculos\src\main\java\br\edu\cs\poo\ac\seguro\daos\ApoliceDAO.java
+C:\Users\arthu\OneDrive\햞ea de Trabalho\CESAR\POO-2026-2\projeto_poo\seguro-veiculos\src\main\java\br\edu\cs\poo\ac\seguro\entidades\Apolice.java
+C:\Users\arthu\OneDrive\햞ea de Trabalho\CESAR\POO-2026-2\projeto_poo\seguro-veiculos\src\main\java\br\edu\cs\poo\ac\seguro\entidades\SeguradoPessoa.java
+C:\Users\arthu\OneDrive\햞ea de Trabalho\CESAR\POO-2026-2\projeto_poo\seguro-veiculos\src\main\java\br\edu\cs\poo\ac\seguro\entidades\Sinistro.java
