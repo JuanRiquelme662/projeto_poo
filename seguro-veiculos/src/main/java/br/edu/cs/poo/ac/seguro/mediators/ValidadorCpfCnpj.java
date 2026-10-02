@@ -2,6 +2,7 @@ package br.edu.cs.poo.ac.seguro.mediators;
 
 public class ValidadorCpfCnpj {
 	//MAIN PARA TESTE
+	//metodo temporario para testar a validacao do cpf
 	public static void main(String[] args) {
     	System.out.println(ehCpfValido("52998224725"));
 	}
@@ -32,6 +33,8 @@ public class ValidadorCpfCnpj {
 		if(StringUtils.ehNuloOuBranco(cpf) || !StringUtils.temSomenteNumeros(cpf) || cpf.length() != 11 || !ehNumeroValido(cpf)){
 			return false;
 		}
+		//essa parte ta parcialmente feita,a validacao ta servindo mais como um placeholder, se der para fazer a validacao completa do cpf, seria bom
+		//principalmente no if que ta comparando a soma com 295, que e so um valor temporario
 		int soma = 0;
 		for(int i = 0; i < 9; i++){
 			int digito = cpf.charAt(i) - '0';
