@@ -3,17 +3,16 @@ package br.edu.cs.poo.ac.seguro.mediators;
 import br.edu.cs.poo.ac.seguro.daos.SeguradoPessoaDAO;
 import br.edu.cs.poo.ac.seguro.entidades.SeguradoPessoa;
 
-
 public class SeguradoPessoaMediator {
 
-	// Singleton: a única instância fica guardada aqui.
+	// Singleton: a \u00fanica instância fica guardada aqui.
 	private static final SeguradoPessoaMediator instancia = new SeguradoPessoaMediator();
-
 
 	private SeguradoMediator seguradoMediator = SeguradoMediator.getInstancia();
 	private SeguradoPessoaDAO dao = new SeguradoPessoaDAO();
 
-	private SeguradoPessoaMediator() {}
+	private SeguradoPessoaMediator() {
+	}
 
 	public static SeguradoPessoaMediator getInstancia() {
 		return instancia;
@@ -26,9 +25,10 @@ public class SeguradoPessoaMediator {
 		if (cpf.length() != 11) {
 			return "CPF deve ter 11 caracteres";
 		}
-		// Chegando aqui o tamanho está certo; falta conferir se os numeros tao certos.
+		// Chegando aqui o tamanho est\u00e1 certo; falta conferir se os numeros tao
+		// certos.
 		if (!ValidadorCpfCnpj.ehCpfValido(cpf)) {
-			return "CPF com dígito inválido";
+			return "CPF com d\u00edgito inv\u00e1lido";
 		}
 		return null;
 	}
@@ -36,7 +36,7 @@ public class SeguradoPessoaMediator {
 	// Renda pode ser zero; só negativa é erro.
 	public String validarRenda(double renda) {
 		if (renda < 0) {
-			return "Renda deve ser maior ou igual à zero";
+			return "Renda deve ser maior ou igual \u00e0 zero";
 		}
 		return null;
 	}
@@ -66,7 +66,7 @@ public class SeguradoPessoaMediator {
 			return msg;
 		}
 
-		// Campos específicos de pessoa
+		// Campos espec\u00edficos de pessoa
 		msg = validarCpf(seg.getCpf());
 		if (msg != null) {
 			return msg;
@@ -79,9 +79,9 @@ public class SeguradoPessoaMediator {
 		if (msg != null) {
 			return msg;
 		}
-		// dao.incluir devolve false quando o CPF já está cadastrado
+		// dao.incluir devolve false quando o CPF j\u00e1 est\u00e1 cadastrado
 		if (!dao.incluir(seg)) {
-			return "CPF do segurado pessoa já existente";
+			return "CPF do segurado pessoa j\u00e1 existente";
 		}
 		return null;
 	}
@@ -91,24 +91,25 @@ public class SeguradoPessoaMediator {
 		if (msg != null) {
 			return msg;
 		}
-		// dao.alterar devolve false quando o CPF NÃO está cadastrado
+		// dao.alterar devolve false quando o CPF NÃO est\u00e1 cadastrado
 		if (!dao.alterar(seg)) {
-			return "CPF do segurado pessoa não existente";
+			return "CPF do segurado pessoa n\u00e3o existente";
 		}
 		return null;
 	}
 
 	public String excluirSeguradoPessoa(String cpf) {
 		// NÃO validamos o CPF aqui de propósito: o teste test16 exclui o CPF
-		// "07255432089" (dígito inválido) e espera a mensagem de "não existente".
-		// Para excluir basta o DAO dizer se existe ou não. 
+		// "07255432089" (d\u00edgito inv\u00e1lido) e espera a mensagem de "n\u00e3o
+		// existente".
+		// Para excluir basta o DAO dizer se existe ou n\u00e3o.
 		if (!dao.excluir(cpf)) {
-			return "CPF do segurado pessoa não existente";
+			return "CPF do segurado pessoa n\u00e3o existente";
 		}
 		return null;
 	}
 
-	// Busca é só repassar para o DAO. Devolve null se não achar.
+	// Busca é só repassar para o DAO. Devolve null se n\u00e3o achar.
 	public SeguradoPessoa buscarSeguradoPessoa(String cpf) {
 		return dao.buscar(cpf);
 	}

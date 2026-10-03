@@ -3,16 +3,16 @@ package br.edu.cs.poo.ac.seguro.mediators;
 import br.edu.cs.poo.ac.seguro.daos.SeguradoEmpresaDAO;
 import br.edu.cs.poo.ac.seguro.entidades.SeguradoEmpresa;
 
-
 public class SeguradoEmpresaMediator {
 
 	private static final SeguradoEmpresaMediator instancia = new SeguradoEmpresaMediator();
 
-	// Atributos inicializados na própria declaração 
+	// Atributos inicializados na própria declara\u00e7\u00e3o
 	private SeguradoMediator seguradoMediator = SeguradoMediator.getInstancia();
 	private SeguradoEmpresaDAO dao = new SeguradoEmpresaDAO();
 
-	private SeguradoEmpresaMediator() {}
+	private SeguradoEmpresaMediator() {
+	}
 
 	public static SeguradoEmpresaMediator getInstancia() {
 		return instancia;
@@ -26,7 +26,7 @@ public class SeguradoEmpresaMediator {
 			return "CNPJ deve ter 14 caracteres";
 		}
 		if (!ValidadorCpfCnpj.ehCnpjValido(cnpj)) {
-			return "CNPJ com dígito inválido";
+			return "CNPJ com d\u00edgito inv\u00e1lido";
 		}
 		return null;
 	}
@@ -39,7 +39,6 @@ public class SeguradoEmpresaMediator {
 		return null;
 	}
 
-	
 	public String validarSeguradoEmpresa(SeguradoEmpresa seg) {
 		if (seg == null) {
 			return "Segurado empresa deve ser informado";
@@ -74,9 +73,9 @@ public class SeguradoEmpresaMediator {
 		if (msg != null) {
 			return msg;
 		}
-		// false = o CNPJ já está cadastrado
+		// false = o CNPJ j\u00e1 est\u00e1 cadastrado
 		if (!dao.incluir(seg)) {
-			return "CNPJ do segurado empresa já existente";
+			return "CNPJ do segurado empresa j\u00e1 existente";
 		}
 		return null;
 	}
@@ -86,18 +85,18 @@ public class SeguradoEmpresaMediator {
 		if (msg != null) {
 			return msg;
 		}
-		// false = o CNPJ NÃO está cadastrado
+		// false = o CNPJ NÃO est\u00e1 cadastrado
 		if (!dao.alterar(seg)) {
-			return "CNPJ do segurado empresa não existente";
+			return "CNPJ do segurado empresa n\u00e3o existente";
 		}
 		return null;
 	}
 
 	public String excluirSeguradoEmpresa(String cnpj) {
 
-		// basta o DAO dizer se existe ou não.
+		// basta o DAO dizer se existe ou n\u00e3o.
 		if (!dao.excluir(cnpj)) {
-			return "CNPJ do segurado empresa não existente";
+			return "CNPJ do segurado empresa n\u00e3o existente";
 		}
 		return null;
 	}
