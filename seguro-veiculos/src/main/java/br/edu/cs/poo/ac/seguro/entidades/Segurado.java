@@ -5,7 +5,7 @@ import java.time.LocalDate;
 import java.time.Period;
 import java.io.Serializable;
 
-public class Segurado implements Serializable {
+public abstract class Segurado implements Serializable {
     private String nome;
     private Endereco endereco;
     private LocalDate dataCriacao;
@@ -61,4 +61,5 @@ public class Segurado implements Serializable {
         return bonus;
     }
 
+    public abstract boolean isEmpresa();
 }

@@ -35,5 +35,9 @@ public class SeguradoPessoa extends Segurado {
     public void setDataNascimento(LocalDate dataNascimento){
         super.setDataCriacao(dataNascimento);
     }
+    @Override
+    public boolean isEmpresa() {
+        return false;
+    }
     
 }
