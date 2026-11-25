@@ -39,5 +39,10 @@ public class SeguradoPessoa extends Segurado {
     public boolean isEmpresa() {
         return false;
     }
+
+    @Override
+    public String getIdUnico() {
+        return cpf;
+    }
     
 }

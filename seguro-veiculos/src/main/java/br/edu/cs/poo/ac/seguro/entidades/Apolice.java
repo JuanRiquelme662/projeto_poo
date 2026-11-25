@@ -3,11 +3,10 @@ package br.edu.cs.poo.ac.seguro.entidades;
 import java.math.BigDecimal;
 import lombok.Getter;
 import lombok.Setter;
-import java.io.Serializable;
 
 @Getter 
 @Setter 
-public class Apolice implements Serializable {
+public class Apolice implements Registro {
     private String numero;
     private Veiculo veiculo;
     private BigDecimal valorFranquia;
@@ -21,5 +20,10 @@ public class Apolice implements Serializable {
         this.valorFranquia = valorFranquia;
         this.valorPremio = valorPremio;
         this.valorMaximoSegurado = valorMaximoSegurado;
+    }
+
+    @Override
+    public String getIdUnico() {
+        return numero;
     }
 }

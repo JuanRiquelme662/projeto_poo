@@ -3,9 +3,8 @@ package br.edu.cs.poo.ac.seguro.entidades;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.time.Period;
-import java.io.Serializable;
 
-public abstract class Segurado implements Serializable {
+public abstract class Segurado implements Registro {
     private String nome;
     private Endereco endereco;
     private LocalDate dataCriacao;
